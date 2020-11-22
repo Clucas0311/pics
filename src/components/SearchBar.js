@@ -3,13 +3,15 @@ import React from 'react';
 class SearchBar extends React.Component {
 	// Whenever someone calls the input this method will be called
 	// event object-->  onChange Called everytime someone changes text in the input
-	// initializw state set to properties
+	// initialize state set to properties
 	state = { term: '' };
 
-	onFormSubmit(event) {
+	onFormSubmit = (event) => {
 		// prevent the browser from refreshing the page
 		event.preventDefault();
-	}
+
+		console.log(this.state.term);
+	};
 
 	render() {
 		return (
