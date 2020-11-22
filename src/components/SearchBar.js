@@ -6,10 +6,16 @@ class SearchBar extends React.Component {
 	// initializw state set to properties
 	state = { term: '' };
 
+	onFormSubmit(event) {
+		// prevent the browser from refreshing the page
+		event.preventDefault();
+	}
+
 	render() {
 		return (
 			<div className="ui segment">
-				<form className="ui form">
+				{/* Prevents the form from automatically submiting  */}
+				<form onSubmit={this.onFormSubmit} className="ui form">
 					<div className="field">
 						<label>Image Search</label>
 						{/* // When we pass a method to a prop we don't put parens -- we only want the ref */}
