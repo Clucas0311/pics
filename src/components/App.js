@@ -16,6 +16,7 @@ class App extends React.Component {
 	};
 	render() {
 		return (
+			// Search bar semantics
 			<div className="ui container" style={{ marginTop: '10px' }}>
 				<SearchBar onSubmit={this.onSearchSubmit} />
 				{/* // print out number of images that we fetched  */}
