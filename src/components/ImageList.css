@@ -1,0 +1,12 @@
+.image-list {
+    display: grid; 
+    /* Gives the page a set with autofill number of columns page of pictures */
+    /* minmax is the wide and spacing 1fr is all the same size pictures */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* Gives spacing between pictures */
+    grid-gap: 10px;
+}
+
+.image-list img {
+    width: 250px; 
+}
