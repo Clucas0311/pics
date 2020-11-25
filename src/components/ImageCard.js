@@ -1,10 +1,11 @@
 import React from 'react';
-
+// Responsible for rendering individual/showing one image at a time
 class ImageCard extends React.Component {
 	constructor(props) {
 		super(props);
 
 		this.state = { spans: 0 };
+		// Creating a ref
 		this.imageRef = React.createRef();
 	}
 
@@ -22,6 +23,7 @@ class ImageCard extends React.Component {
 		const { description, urls } = this.props.image;
 		return (
 			<div style={{ gridRowEnd: `span ${this.state.spans}` }}>
+				{/* Creating a ref */}
 				<img ref={this.imageRef} alt={description} src={urls.regular} />
 			</div>
 		);

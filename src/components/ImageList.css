@@ -1,11 +1,13 @@
 .image-list {
+    /* Images laid out in grid like layout */
     display: grid; 
     /* Gives the page a set with autofill number of columns page of pictures */
     /* minmax is the wide and spacing 1fr is all the same size pictures */
+    /* Creates a set number of columns based on window size */
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    /* Gives spacing between pictures */
+    /* Gives spacing between picturesm- 10 px spacing between each image */
     grid-gap: 0 10px;
-    /* How tall or how each of the different cells or rows are going to be */
+    /* How tall the rows are going to be - skrinks the size of the photos Horizonatally */
     grid-auto-rows: 10px;
 }
 
