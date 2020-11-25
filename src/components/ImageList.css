@@ -4,9 +4,9 @@
     /* minmax is the wide and spacing 1fr is all the same size pictures */
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     /* Gives spacing between pictures */
-    grid-gap: 10px;
+    grid-gap: 0 10px;
     /* How tall or how each of the different cells or rows are going to be */
-    grid-auto-rows: 200px;
+    grid-auto-rows: 10px;
 }
 
 .image-list img {
